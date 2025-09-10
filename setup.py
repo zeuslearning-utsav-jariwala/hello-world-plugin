@@ -158,10 +158,6 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.12',
     ],
-    include_package_data=True,
-    install_requires=load_requirements('requirements/base.in'),
-    python_requires=">=3.8",
-    zip_safe=False,
     entry_points={
         'lms.djangoapp': [
             "hello_world = hello_world.apps:HelloWorldConfig",
