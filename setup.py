@@ -158,10 +158,6 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.12',
     ],
-    packages=find_packages(
-        include=['hello_world', 'hello_world.*'],
-        exclude=["*tests"],
-    ),
     include_package_data=True,
     install_requires=load_requirements('requirements/base.in'),
     python_requires=">=3.8",
