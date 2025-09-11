@@ -6,6 +6,7 @@ Django applications, so these settings will not be used.
 """
 
 from os.path import abspath, dirname, join
+from django.conf import LazySettings
 
 
 def root(*args):
@@ -64,3 +65,11 @@ TEMPLATES = [{
 ALLOWED_HOSTS = ["*"]
 
 DEBUG = True
+
+def plugin_settings(settings: LazySettings):  # pylint: disable=unused-argument
+    """
+    Set of plugin settings used by the Open Edx platform.
+
+    For more information please see:
+    https://github.com/openedx/edx-django-utils/tree/master/edx_django_utils/plugins
+    """
