@@ -23,9 +23,9 @@ class HelloWorldConfig(AppConfig):
         },
         'settings_config': {
             'lms.djangoapp': {
-                'production': {'relative_path': '../test_settings'},
-                'common': {'relative_path': '../test_settings'},
-                'devstack': {'relative_path': '../test_settings'},
+                'production': {'relative_path': 'test_settings'},
+                'common': {'relative_path': 'test_settings'},
+                'devstack': {'relative_path': 'test_settings'},
             },
         },
     }
