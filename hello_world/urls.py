@@ -6,5 +6,5 @@ from django.views.generic import TemplateView  # pylint: disable=unused-import
 from .views import hello_world_view
 
 urlpatterns = [
-    path('hello/', hello_world_view, name='hello_world'),
+    path('', hello_world_view, name='hello_world'),
 ]
